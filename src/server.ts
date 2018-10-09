@@ -8,6 +8,14 @@ const app = express();
 let access_token = '';
 let refresh_token = '';
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", '*');
+    res.header("Access-Control-Allow-Credentials", true);
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
+    next();
+});
+
 /**
  * example http://youtube-timecode-retriever-api/api/v1/channelName/PewDiePie?quote=Look at T-Series, they're just crying for their momma
  */

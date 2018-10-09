@@ -32,4 +32,8 @@ app.get('/api/v1/search', (req, res) => {
     .catch(e => console.log(e))
 })
 
+app.get('/', (req, res) => {
+    res.send("Welcome to the API of Youtube-Timecode-Retriver !")
+})
+
 app.listen(port);

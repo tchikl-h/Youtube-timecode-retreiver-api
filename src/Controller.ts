@@ -106,7 +106,7 @@ export default class Controller {
         console.log("getVideoFromChannel ! => "+channelName+" and "+quoteToFind);
         this.videoIdList = [];
         return new Promise<any>((resolve, reject) => {
-            resolve("https://www.youtube.com/watch?v=6Dh-RL__uN4")
+            resolve({videoUrl: 'https://www.youtube.com/watch?v=6Dh-RL__uN4'})
             // this.getChannelIdFromChannelName(channelName)
             // .then(channelId => {
             //     this.getVideoListFromChannelId(channelId)
@@ -132,7 +132,7 @@ export default class Controller {
     getVideoFromKeywords(keywords: Array<string>, quoteToFind: string) : Promise<string> {
         console.log("getVideoFromKeywords ! => "+keywords+" and "+quoteToFind);
         return new Promise<any>((resolve, reject) => {
-            resolve("https://www.youtube.com/watch?v=6Dh-RL__uN4")
+            resolve({videoUrl: 'https://www.youtube.com/watch?v=6Dh-RL__uN4'})
         });
     }
 }

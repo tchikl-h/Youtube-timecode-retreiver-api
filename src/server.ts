@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as request from 'request';
 import Controller from './Controller';
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 const app = express();
 let access_token = '';
 let refresh_token = '';

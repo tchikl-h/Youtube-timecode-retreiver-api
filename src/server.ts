@@ -9,7 +9,7 @@ let access_token = '';
 let refresh_token = '';
 
 /**
- * example http://youtube-timecode-retriever/api/v1/channelName/PewDiePie?quote=Look at T-Series, they're just crying for their momma
+ * example http://youtube-timecode-retriever-api/api/v1/channelName/PewDiePie?quote=Look at T-Series, they're just crying for their momma
  */
 app.get('/api/v1/channelName/:channelName', (req, res) => {
     let controller = new Controller(req.headers.access_token);
@@ -21,7 +21,7 @@ app.get('/api/v1/channelName/:channelName', (req, res) => {
 })
 
 /**
- * example http://youtube-timecode-retriever/api/v1/search?keywords=pewdiepie;tseries;clash;lasagna&quote=Look at T-Series, they're just crying for their momma
+ * example http://youtube-timecode-retriever-api/api/v1/search?keywords=pewdiepie;tseries;clash;lasagna&quote=Look at T-Series, they're just crying for their momma
  */
 app.get('/api/v1/search', (req, res) => {
     let controller = new Controller(req.headers.access_token);

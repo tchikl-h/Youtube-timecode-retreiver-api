@@ -2,11 +2,12 @@
   "name": "youtube-timecode-retriever-api",
   "version": "1.0.0",
   "description": "API to interact with youtube",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "tsc --watch",
-    "build-prod": "webpack --config webpack.config.js"
+    "start": "tsc && node built/server.js"
   },
   "author": "",
   "license": "ISC",
